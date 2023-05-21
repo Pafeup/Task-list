@@ -21,7 +21,7 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-taskList").innerHTML = htmlString;
     };
     
     const init = () => {

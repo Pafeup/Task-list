@@ -11,19 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <form class="js-form">
-            <input class="js-newTask">
-            <button>Add Task</button>
-        </form>
-    </div>
-    <div>
-        <ul class="js-tasks"></ul>
-    </div>
-
+    <main class="main">
+        <h1 class="main__header">Lista zadań</h1>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <form class="form js-form">
+                <input class="form__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
+                <button class="form__button js-addNewTask">Dodaj zadanie</button>
+            </form>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Lista zadań</h2>
+            <ul class="js-taskList"></ul>
+        </section>
+    </main>
 </body>
 
 </html>
