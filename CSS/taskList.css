@@ -1,3 +1,19 @@
+.taskList {
+    padding: 40px 20px 20px;
+    margin: auto;
+    list-style: none;
+}
+
+.taskList__item {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    word-break: break-word;
+}
+
 .taskList__done {
     text-decoration: line-through;
 }

@@ -1,0 +1,11 @@
+.button {
+    background-color: green;
+    color: white;
+    border: 0;
+    height: 30px;
+    width: 30px;
+}
+
+.button--remove {
+    background-color: red;
+}
