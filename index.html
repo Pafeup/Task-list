@@ -6,30 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task list</title>
+    <link href="CSS/body.css" rel="stylesheet">
+    <link href="CSS/main.css" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/section.css" rel="stylesheet">
     <link href="CSS/taskList.css" rel="stylesheet">
     <script defer src="JS/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <main class="main">
         <h1 class="main__header">Lista zadań</h1>
         <section class="section">
-            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <header class="section__header">
+                <h3 class="section__headerName">Dodaj nowe zadanie</h3>
+            </header>
             <form class="form js-form">
                 <input class="form__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
                 <button class="form__button js-addNewTask">Dodaj zadanie</button>
             </form>
         </section>
         <section class="section">
-            <h2 class="section__header">Lista zadań</h2>
+            <header class="section__header">
+                <h3 class="section__headerName">Lista zadań</h3>
+            </header>
             <ul class="taskList js-taskList"></ul>
         </section>
     </main>

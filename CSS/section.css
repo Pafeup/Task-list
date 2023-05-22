@@ -1,0 +1,18 @@
+.section {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.section__header {
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+
+}
+
+.section__headerName {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
