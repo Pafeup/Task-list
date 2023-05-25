@@ -11,6 +11,7 @@
         flex-direction: column;
         justify-content: stretch;
         align-items: stretch;
+        gap: 10px;
         flex-wrap: wrap;
         overflow-x: auto;
     }
@@ -26,4 +27,8 @@
     color: white;
     border: 0px;
     padding: 10px;
+}
+
+.form__button:active{
+    outline: auto black;
 }

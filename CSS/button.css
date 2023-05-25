@@ -11,3 +11,7 @@
     background-color: red;
     font-weight: normal
 }
+
+.button:active{
+    outline: auto black;
+}
