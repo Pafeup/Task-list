@@ -5,6 +5,17 @@
     gap: 20px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+}
+
 .form__input {
     padding: 10px;
     border: 2px solid #eee;
@@ -14,5 +25,5 @@
     background-color: teal;
     color: white;
     border: 0px;
-    padding: 0 10px;
+    padding: 10px;
 }

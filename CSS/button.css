@@ -4,8 +4,10 @@
     border: 0;
     height: 30px;
     width: 30px;
+    font-weight: bold;
 }
 
 .button--remove {
     background-color: red;
+    font-weight: normal
 }
