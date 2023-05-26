@@ -29,6 +29,6 @@
     padding: 10px;
 }
 
-.form__button:active{
+.form__button:active {
     outline: auto black;
 }

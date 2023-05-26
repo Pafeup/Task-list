@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "first task",
-            done: true,
-        },
-        {
-            content: "second task",
-            done: false,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -73,10 +64,10 @@
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskElement.value = "";
-        }
+        };
 
         newTaskElement.focus();
-    }
+    };
 
     const init = () => {
         render();
