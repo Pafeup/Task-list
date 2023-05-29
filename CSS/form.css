@@ -1,34 +1,34 @@
 .form {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
 }
 
 @media (max-width: 767px) {
-    .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: stretch;
-        gap: 10px;
-        flex-wrap: wrap;
-        overflow-x: auto;
-    }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+  }
 }
 
 .form__input {
-    padding: 10px;
-    border: 2px solid #eee;
+  padding: 10px;
+  border: 2px solid #eee;
 }
 
 .form__button {
-    background-color: teal;
-    color: white;
-    border: 0px;
-    padding: 10px;
+  background-color: teal;
+  color: white;
+  border: 0px;
+  padding: 10px;
 }
 
 .form__button:active {
-    outline: auto black;
+  outline: auto black;
 }

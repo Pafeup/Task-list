@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task list</title>
-    <meta property="og:image" content="images/taskListOgImage.png">
-    <meta property="og:description" content="Don't know how to plan your tasks during the day?
-    This simple app will help you with that.">
-    <link rel="icon" href="images/taskListIcon.png">
-    <link href="CSS/style.css" rel="stylesheet">
-    <link href="CSS/body.css" rel="stylesheet">
-    <link href="CSS/main.css" rel="stylesheet">
-    <link href="CSS/section.css" rel="stylesheet">
-    <link href="CSS/form.css" rel="stylesheet">
-    <link href="CSS/taskList.css" rel="stylesheet">
-    <link href="CSS/button.css" rel="stylesheet">
+    <meta property="og:image" content="images/taskListOgImage.png" />
+    <meta
+      property="og:description"
+      content="Don't know how to plan your tasks during the day?
+    This simple app will help you with that."
+    />
+    <link rel="icon" href="images/taskListIcon.png" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/body.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
+    <link href="CSS/section.css" rel="stylesheet" />
+    <link href="CSS/form.css" rel="stylesheet" />
+    <link href="CSS/taskList.css" rel="stylesheet" />
+    <link href="CSS/button.css" rel="stylesheet" />
     <script defer src="JS/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="body">
+  <body class="body">
     <main class="main">
-        <h1 class="main__header">Lista zadań</h1>
-        <section class="section">
-            <header class="section__header">
-                <h3 class="section__headerName">Dodaj nowe zadanie</h3>
-            </header>
-            <form class="form js-form">
-                <input class="form__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
-                <button class="form__button js-addNewTask">Dodaj zadanie</button>
-            </form>
-        </section>
-        <section class="section">
-            <header class="section__header">
-                <h3 class="section__headerName">Lista zadań</h3>
-            </header>
-            <ul class="taskList js-taskList"></ul>
-        </section>
+      <h1 class="main__header">Lista zadań</h1>
+      <section class="section">
+        <header class="section__header">
+          <h3 class="section__headerName">Dodaj nowe zadanie</h3>
+        </header>
+        <form class="form js-form">
+          <input
+            class="form__input js-newTask"
+            type="text"
+            placeholder="Co jest do zrobienia?"
+          />
+          <button class="form__button js-addNewTask">Dodaj zadanie</button>
+        </form>
+      </section>
+      <section class="section">
+        <header class="section__header">
+          <h3 class="section__headerName">Lista zadań</h3>
+        </header>
+        <ul class="taskList js-taskList"></ul>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
