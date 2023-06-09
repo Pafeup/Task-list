@@ -1,12 +1,14 @@
 {
-	const tasks = [];
+	let tasks = [];
 
 	const addNewTask = (newTaskContent) => {
-		tasks.push({
-			content: newTaskContent,
-		});
+		tasks = [
+			...tasks,
+			{ content: newTaskContent },
+		];
 		render();
 	};
+
 
 	const removeTask = (index) => {
 		tasks.splice(index, 1);
@@ -17,6 +19,17 @@
 		tasks[index].done = !tasks[index].done;
 		render();
 	};
+
+	const markAllTasksDone = () => {
+		const updatedTasks = tasks.map((task) => ({
+		  ...task,
+		  done: true,
+		}));
+	  
+		tasks = updatedTasks;
+		render();
+	  };
+	  
 
 	const bindEvents = () => {
 		const removeButtons = document.querySelectorAll(".js-remove");
@@ -37,26 +50,51 @@
 		});
 	};
 
-	const render = () => {
+	const renderNewTask = () => {
 		let htmlString = "";
 
 		for (const task of tasks) {
-			htmlString += 
-			`<li class="taskList__item">
-        <button class="button js-done">
-        	${task.done ? "✓" : ""}
-        </button>
-        <span class=${task.done ? "taskList__done" : ""}>
-          ${task.content}
-        </span>
-        <button class="button button--remove js-remove">
-          🗑
-        </button>
-      </li>`;
+			htmlString +=
+				`<li class="taskList__item">
+        		<button class="button js-done">
+        			${task.done ? "✓" : ""}
+       			</button>
+        		<span class="${task.done ? "taskList__done" : ""}">
+         			${task.content}
+        		</span>
+        		<button class="button button--remove js-remove">
+          			🗑
+        		</button>
+      		</li>`;
 		}
 
 		document.querySelector(".js-taskList").innerHTML = htmlString;
+	};
 
+	const renderButtons = () => {
+		const theButtons = document.querySelector(".js-theButtons")
+
+		if (!tasks.length) {
+			theButtons.innerHTML = "";
+			return;
+		};
+
+		theButtons.innerHTML += `
+		<button>
+			Ukryj ukończone
+		</button>
+		<button class="js-markAllDone">
+			Ukończ wszystkie
+		</button>`
+
+		const markAllDoneButton =document.querySelector(".js-markAllDone");
+		markAllDoneButton.addEventListener("click", markAllTasksDone);
+
+	};
+
+	const render = () => {
+		renderNewTask();
+		renderButtons();
 		bindEvents();
 	};
 
@@ -69,7 +107,7 @@
 		if (newTaskContent !== "") {
 			addNewTask(newTaskContent);
 			newTaskElement.value = "";
-		}
+		};
 
 		newTaskElement.focus();
 	};
