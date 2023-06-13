@@ -23,3 +23,4 @@ https://pafeup.github.io/Task-list/
 - GRID
 - JS - Arrow function
 - JS - Array Objects
+- Immutability
