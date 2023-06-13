@@ -1,6 +1,7 @@
 .section {
   background-color: white;
   margin-bottom: 10px;
+  box-shadow: 8px 8px 24px -20px rgba(66, 68, 90, 1);
 }
 
 .section__header {
@@ -13,10 +14,37 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .section__header {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section__headerName {
   padding: 10px;
-  margin: auto;
+  margin: 0;
+}
+
+.section__headerButtons {
+  color: teal;
+  background-color: transparent;
+  border: 0px transparent;
+  padding: 0 10px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.5s;
+}
+
+@media (max-width: 767px){
+  .section__headerButtons{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+}
+
+.section__headerButtons:hover {
+  color: hsl(180, 100%, 35%);
 }
