@@ -5,6 +5,16 @@
   height: 30px;
   width: 30px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: hsl(120, 100%, 30%);
+}
+
+.button:active {
+  outline: auto black;
+  background-color: hsl(120, 100%, 35%);
 }
 
 .button--remove {
@@ -12,6 +22,10 @@
   font-weight: normal;
 }
 
-.button:active {
-  outline: auto black;
+.button--remove:hover {
+  background-color: hsl(348, 83%, 52%);
+}
+
+.button--remove:active {
+  background-color: hsl(348, 83%, 57%);
 }

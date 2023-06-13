@@ -70,7 +70,8 @@
     	<button class="section__headerButtons js-hideCompleted">
       		${hideCompleted ? "Pokaż ukończone" : "Ukryj ukończone"}
     	</button>
-    	<button class="section__headerButtons js-markAllDone">
+    	<button class="section__headerButtons js-markAllDone" 
+        ${tasks.every(({ done }) => done) ? " disabled " : ""}>
     		Ukończ wszystkie
     	</button>`;
   };

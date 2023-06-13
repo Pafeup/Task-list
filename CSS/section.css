@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  transition: color 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 767px){
@@ -47,4 +47,8 @@
 
 .section__headerButtons:hover {
   color: hsl(180, 100%, 35%);
+}
+
+.section__headerButtons:disabled{
+  color: #ddd;
 }
