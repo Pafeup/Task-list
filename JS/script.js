@@ -44,13 +44,13 @@
         hideCompleted && task.done ? "" : `
 			<li class="taskList__item">
 			  <button class="button js-done">
-				${task.done ? "✓" : ""}
+				  ${task.done ? "✓" : ""}
 			  </button>
 			  <span class=${task.done ? "taskList__done" : ""}>
-				${task.content}
+				  ${task.content}
 			  </span>
 			  <button class="button button--remove js-remove">
-				🗑
+				  🗑
 			  </button>
 			</li>`;
     }
@@ -68,7 +68,7 @@
 
     theButtons.innerHTML = `
     	<button class="section__headerButtons js-hideCompleted">
-      		${hideCompleted ? "Pokaż ukończone" : "Ukryj ukończone"}
+      	${hideCompleted ? "Pokaż ukończone" : "Ukryj ukończone"}
     	</button>
     	<button class="section__headerButtons js-markAllDone" 
         ${tasks.every(({ done }) => done) ? " disabled " : ""}>

@@ -17,6 +17,7 @@
 @media (max-width: 767px) {
   .section__header {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
@@ -37,11 +38,12 @@
   transition: 0.5s;
 }
 
-@media (max-width: 767px){
-  .section__headerButtons{
+@media (max-width: 767px) {
+  .section__headerButtons {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px;
+    gap: 15px;
+    padding: 5px;
   }
 }
 
@@ -49,6 +51,6 @@
   color: hsl(180, 100%, 35%);
 }
 
-.section__headerButtons:disabled{
+.section__headerButtons:disabled {
   color: #ddd;
 }
